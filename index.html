@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <!--Links to Stylesheets for CSS and configures for browser and window support-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Name of Page to appear on tab-->
+  <title>Find Your Food</title>
+  <link rel="stylesheet" href="Assets/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+     <h1 id = "mainpiece">find  your food</h1>
+
+ <!--Navigation menu and links-->
+ <nav class = "navbar">
+    <ul>
+      <li class = "selected"><a href = "" >Home</a></li>
+      <li><a href = "restaurants.html">Restaurants</a></li>
+      <li><a href = "about.html">About</a></li>
+    </ul>
+   </nav>
+  </header>
+
+
+   <!--icon to visually enhance page-->
+      <img src = "Assets/download.png" alt = "food clipArt" class = "icon">
+      
+  <!--Creates search bar and search buttn-->
+  <section id="wrap">
+    <form id="search" name = "searchBar">
+       <input type="text" id="searchTerm" placeholder="Search for your food">
+       <button type="submit" id="searchButton" onclick = "searched(); return false;"><i class="fa fa-search"></i>
+      </button>
+    </form>
+<br><br>
+  </section>
+
+  <!---Creates area for results which wll be manipulated by the javascript file-->
+  <section id = "searches">
+  <aside id= "query-1">
+
+    <!--information text on how to use-->
+      
+          <p style = "font-size: 24px; text-decoration: bold;"><br>How to Use<p>
+          <p>
+              - Search for a general fast food item like burger<br>
+              - Click on the plus sign of a search result to expand to a pop up window
+        </p>
+  </aside>
+
+
+  <!-- The Modal -->
+<div id="popUp" class="popWindow" >
+
+    <!-- popup content -->
+    <div class="popText">
+      <!-- closing button -->
+        <button type = "submit" class="close" onclick = "exit(); return false;">&times;</button>
+        <section id = "banner"></section>
+      <!--information about the food and the restaurant-->
+      <p id = "innerText">Stuff about food!</p>
+    </div>
+
+  </div>
+
+
+  <!--link to the processing javascript-->
+  <script src="Scripts/scripts.js"></script>
+</section>
+</body>
+</html>
