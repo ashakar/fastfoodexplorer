@@ -1,1 +1,4 @@
-# findyourfood
+# Fast Food Explorer
+The Fast Food Explorer is a Javascript web application aimed to help individuals decide **which fast food vendor is best suited for their current cravings**. Users can supply a general food, such as *nuggets*, and will be provided with all the fast food restaurants who serve some form of *nuggets* as well as the specific entree name, and calorie count of the entree. For each vendor, if there is a nearby store to the user, details on the nearest store will be provided.
+
+It was originally built using the (now deprecated) USDA Food Data API, but has been updated to use the Nutritionix API and Foursquare.
